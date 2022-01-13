@@ -1,16 +1,15 @@
-# marvel_characters
+# Marvel Character Catalog
+Simple project that displays some Marvel characters and shows the movies that those characters appear.
 
-A new Flutter project.
+## Technologies
++ [Flutter](https://flutter.dev/?gclid=Cj0KCQiAq7COBhC2ARIsANsPATH9RZHhlW4RT0q7zeRfGTGhxcFi4Bf5uycD0d_w303RNW1BMgwFOe0aAp0eEALw_wcB&gclsrc=aw.ds)
++ [Android Studio](https://developer.android.com/studio?authuser=1)
++ [Dart](https://dart.dev/guides)
 
-## Getting Started
+## UI Images
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/47696178/149395514-ad361276-465a-4282-b4a3-dd3c0abd85c7.gif)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Collaborators
+[Mario Vieira](https://github.com/MarioWork)
