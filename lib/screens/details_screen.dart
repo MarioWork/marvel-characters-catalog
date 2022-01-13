@@ -46,6 +46,24 @@ class DetailsScreenBody extends StatelessWidget {
                       fontWeight: FontWeight.bold)),
             ),
             const Divider(thickness: 2),
+            SizedBox(
+              height: 390,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListView.builder(
+                    itemCount: character.movies.length,
+                    itemBuilder: (context, index) {
+                      return Card(
+                          child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Text(
+                          character.movies[index].movieName,
+                          style: const TextStyle(fontSize: 18, letterSpacing: 1),
+                        ),
+                      ));
+                    }),
+              ),
+            )
           ],
         ),
       ),

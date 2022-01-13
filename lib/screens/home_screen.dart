@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:marvel_characters/models/character.dart';
-import 'package:marvel_characters/screens/details_screen.dart';
 import 'package:marvel_characters/services/character_service.dart';
+import 'package:marvel_characters/widgets/character_item_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -22,15 +22,6 @@ class HomeScreenBody extends StatelessWidget {
 
   HomeScreenBody({Key? key}) : super(key: key);
 
-  void _onItemPressed(Character character, BuildContext context) {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => DetailsScreen(
-                  character: character,
-                )));
-  }
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -38,22 +29,7 @@ class HomeScreenBody extends StatelessWidget {
       child: ListView.builder(
           itemCount: characters.length,
           itemBuilder: (context, index) {
-            return GestureDetector(
-              onTap: () => _onItemPressed(characters[index], context),
-              child: SizedBox(
-                height: 300,
-                child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  elevation: 2,
-                  child: Image.asset(
-                    characters[index].imageResource,
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-            );
+            return CharacterItemWidget(character: characters[index]);
           }),
     );
   }
